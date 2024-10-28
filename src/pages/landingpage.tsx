@@ -31,12 +31,21 @@ const LandingPage = () => {
   const [waitlistEmail, setWaitlistEmail] = useState("");
 
   // local testing
+<<<<<<< HEAD
   const MY_API_KEY = "XLzmLAWn9RcqmyHc57xV0g";  //process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY;
   const MY_API_TAG = "3960977";    process.env.NEXT_PUBLIC_CONVERTKIT_API_TAG;
 
   // production GH Pages
   // const MY_API_KEY = process.env.CONVERTKIT_API_KEY;
   // const MY_API_TAG = process.env.NEXT_PUBLIC_CONVERTKIT_API_TAG;
+=======
+  //const MY_API_KEY = "XLzmLAWn9RcqmyHc57xV0g";  //process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY;
+  //const MY_API_TAG = "3960977";    process.env.NEXT_PUBLIC_CONVERTKIT_API_TAG;
+
+  // production GH Pages
+   const MY_API_KEY = process.env.CONVERTKIT_API_KEY;
+   const MY_API_TAG = process.env.NEXT_PUBLIC_CONVERTKIT_API_TAG;
+>>>>>>> f0d57282db67efb87784feb57567225d23b1e3da
   
   const handleSubmitWaitlist: FormEventHandler<HTMLFormElement> = async (
     ev
@@ -104,6 +113,7 @@ const LandingPage = () => {
       <section className="flex flex-col md:flex-row justify-center gap-[2rem] items-center px-[3rem]">
         <div className="w-[50%] max-[767px]:w-full">
           <div className={`${styles["gradient-header"]}`}></div>
+<<<<<<< HEAD
           <h1 className="text-5xl leading-[3.625rem] font-bold text-center relative z-50 max-[767px]:text-[30px] max-[767px]:leading-[150%]">
             Support your community with every swipe!
           </h1>
@@ -130,6 +140,19 @@ const LandingPage = () => {
               Join our waitlist
             </button>
           </form>
+=======
+          <h1 className="text-4xl font-bold text-center relative z-50 max-[767px]:text-[30px] max-[767px]:leading-[150%]">
+            Support your community with every swipe!
+          </h1>
+          <p className="text-lg leading-[1.375rem] mt-[1rem] text-center relative z-50 max-[767px]:leading-[130%]">
+            BCard redirects payment card fees to your favorite community and rewards you with community tokens.
+          </p>
+          {/* <ConvertKitForm formId={MY_FORM_ID} /> */}
+          <p className={styles.mainCTA}>
+            <a className={styles.mainCTAButton} href="https://app.getbcard.io" target="_blank">Sign up now (USA only)</a>
+          </p>  
+               
+>>>>>>> f0d57282db67efb87784feb57567225d23b1e3da
         </div>
         <div className="max-[767px]:hidden">
           <Image

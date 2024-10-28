@@ -4,11 +4,16 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> f0d57282db67efb87784feb57567225d23b1e3da
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+<<<<<<< HEAD
     extend: {
       linearGradientColors: {
         "custom-gradient":
@@ -21,3 +26,9 @@ module.exports = {
   },
   plugins: [],
 };
+=======
+    extend: {},
+  },
+  plugins: [],
+}
+>>>>>>> f0d57282db67efb87784feb57567225d23b1e3da
